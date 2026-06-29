@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="ctrl" aria-label="Presentation controls"><button id="prev">السابق</button><button id="next">التالي</button></div>
-<div class="progress"><span id="bar"></span></div><div class="counter" id="counter">01 / 22</div>
+<div class="progress"><span id="bar"></span></div><div class="counter" id="counter">01 / 25</div>
 <main class="deck" id="deck" tabindex="0" aria-label="سِكّة business plan deck">
 
 <!-- Slide 1: Cover -->
@@ -21,9 +21,9 @@
     <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>سِكّة</span></div><div class="meta">مشروع أعمال إلكترونية</div></div>
     <div class="split">
       <div class="stack" style="gap:24px">
-        <span class="eyebrow">نظام منع فشل الزيارات الحكومية في مصر</span>
+        <span class="eyebrow">نظام تقليل احتمالية فشل الزيارات الحكومية في مصر</span>
         <h1 class="cover-title" style="font-size:62px;">عرض خطة العمل<br>(Business Plan)</h1>
-        <p class="lead">سِكّة هو نظام إلكتروني ذكي مصمم للشركات والأفراد، لتقليل معدلات فشل المعاملات الحكومية، منع تكرار الزيارات، وتوفير التكلفة التشغيلية والوقت.</p>
+        <p class="lead">سِكّة هو نظام إلكتروني ذكي مصمم للشركات والأفراد، لرفع مستوى الجاهزية، والحد من الزيارات غير الناجحة، وتوفير التكلفة التشغيلية والوقت.</p>
         <div class="row"><span class="tag">فكرة المشروع الأساسية (Business Idea)</span><span class="tag">الكفاءة التشغيلية</span></div>
       </div>
       <div class="svg-card">
@@ -40,10 +40,40 @@
   </div>
 </section>
 
-<!-- Slide 2: Problem -->
+<!-- Slide 2: Intro / Why Sikka Matters -->
+<section class="scene" data-name="Intro / Why Sikka Matters">
+  <div class="canvas">
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>مقدمة العرض</span></div><div class="meta">02 · Why Sikka Matters</div></div>
+    <div class="split">
+      <div class="stack" style="gap:20px">
+        <span class="eyebrow">لماذا سِكّة؟ — Why Sikka Matters</span>
+        <h2>مقدمة العرض — Why Sikka Matters</h2>
+        <p class="lead" style="font-size: 21px; line-height: 1.6; font-weight: 500;">
+          "في كل يوم، يذهب آلاف الأفراد والموظفين لإنهاء معاملات حكومية، لكن زيارة واحدة فاشلة قد تعني يوم عمل ضائع، مصاريف إضافية، وتأخير في إجراءات مهمة. سِكّة يحوّل هذه التجربة من تخمين ومخاطرة إلى خطة جاهزية واضحة قبل الذهاب."
+        </p>
+      </div>
+      <div class="grid g1" style="gap:16px;">
+        <div class="card" style="padding: 20px; border-right: 5px solid var(--red);">
+          <h3 style="color:var(--red); font-size: 20px; margin-bottom: 6px;">المشكلة يومية ومتكررة</h3>
+          <p class="lead" style="font-size:16px; line-height: 1.5;">يعاني منها ملايين المواطنين وآلاف الشركات يومياً بسبب تضارب أو غياب المعلومات الميدانية الدقيقة.</p>
+        </div>
+        <div class="card" style="padding: 20px; border-right: 5px solid var(--teal);">
+          <h3 style="color:var(--teal); font-size: 20px; margin-bottom: 6px;">الحل رقمي وقابل للتوسع</h3>
+          <p class="lead" style="font-size:16px; line-height: 1.5;">منصة موحدة ذكية تجمع وتحدث المتطلبات وتتوسع لتخدم ملايين المستخدمين بدون أي قيود جغرافية.</p>
+        </div>
+        <div class="card" style="padding: 20px; border-right: 5px solid var(--green);">
+          <h3 style="color:var(--green); font-size: 20px; margin-bottom: 6px;">القيمة واضحة للأفراد والشركات</h3>
+          <p class="lead" style="font-size:16px; line-height: 1.5;">عائد استثمار تشغيلي مباشر من خلال توفير مصاريف الانتقال والحد من هدر الوقت وأيام الإجازات.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 3: Problem -->
 <section class="scene" data-name="Problem">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>المشكلة</span></div><div class="meta">01 · Cost of Failure</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>المشكلة</span></div><div class="meta">03 · Cost of Failure</div></div>
     <div class="slide-title stack">
       <span class="eyebrow">التكلفة الباهظة لفشل الزيارات الحكومية</span>
       <h2>الذهاب للمصلحة بغير جاهزية كاملة يعني خسارة مؤكدة للوقت والمال.</h2>
@@ -53,14 +83,14 @@
       <div class="card risk"><h3>إهدار أيام العمل (للأفراد)</h3><p class="lead" style="font-size:20px">استنفاذ رصيد الإجازات وتحمل مصاريف تنقل متكررة بسبب غياب ختم أو مستند بسيط.</p></div>
       <div class="card risk"><h3>الاعتماد على مصادر غير موثوقة</h3><p class="lead" style="font-size:20px">البحث العشوائي يولد بيانات غير محدثة، مما يزيد نسبة الخطأ ويجعل المواطن عرضة للاستغلال.</p></div>
     </div>
-    <div class="quote card">“المشكلة ليست في غياب المعلومات، بل في غياب <strong>نظام يضمن الجاهزية</strong> ويمنع الفشل الإداري قبل حدوثه.”</div>
+    <div class="quote card">“المشكلة ليست في غياب المعلومات، بل في غياب <strong>نظام يرفع مستوى الجاهزية</strong> ويحد من التعثر الإداري قبل حدوثه.”</div>
   </div>
 </section>
 
-<!-- Slide 3: Why now -->
+<!-- Slide 4: Why now -->
 <section class="scene" data-name="Why now">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>لماذا الآن؟</span></div><div class="meta">02 · Market Timing</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>لماذا الآن؟</span></div><div class="meta">04 · Market Timing</div></div>
     <div class="split">
       <div class="stack">
         <span class="eyebrow">الرقمنة تبرز فجوة التنفيذ الفعلي</span>
@@ -77,38 +107,38 @@
           <div class="bar green" style="height:90%"><label>رقمنة</label><small>الخدمات كمعلومات</small></div>
           <div class="bar red" style="height:35%"><label>تنفيذ</label><small>تخبط على الأرض</small></div>
         </div>
-        <p class="footnote" style="margin-top:54px">سِكّة يسد الفجوة عن طريق ربط المعلومات النظرية بواقع المكاتب المختلفة، لمنع الإخفاقات.</p>
+        <p class="footnote" style="margin-top:54px">سِكّة يسد الفجوة عن طريق ربط المعلومات النظرية بواقع المكاتب المختلفة، للحد من الإخفاقات.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Slide 4: Solution -->
+<!-- Slide 5: Solution -->
 <section class="scene" data-name="Solution">
   <div class="canvas dark">
-    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>الحل</span></div><div class="meta">03 · Readiness System</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>الحل</span></div><div class="meta">05 · Readiness System</div></div>
     <div class="split">
       <div class="stack">
         <span class="eyebrow">الخصائص الرئيسية (Main Features)</span>
         <h2>نظام قياس الجاهزية الشامل قبل الذهاب للمصلحة.</h2>
-        <p class="lead">سِكّة يحول البيانات المعقدة إلى خطة مشوار دقيقة: يعرفك بنسبة جاهزيتك، يجهز قائمة أوراقك الدقيقة (أصل/صورة)، يحذرك من الأخطاء المتكررة، ويمنع تكرار المشوار.</p>
+        <p class="lead">سِكّة يحول البيانات المعقدة إلى خطة مشوار دقيقة: يعرفك بنسبة جاهزيتك، يجهز قائمة أوراقك الدقيقة (أصل/صورة)، يحذرك من الأخطاء المتكررة، ويقلل احتمالية تكرار المشوار.</p>
         <div class="timeline">
           <div class="step"><div class="dot">1</div><h4>اختيار</h4><p>تحديد الإجراء</p></div><div class="step"><div class="dot">2</div><h4>تشخيص</h4><p>إجابة أسئلة مخصصة</p></div><div class="step"><div class="dot">3</div><h4>تخطيط</h4><p>إصدار خطة تفصيلية</p></div><div class="step"><div class="dot">4</div><h4>جاهزية</h4><p>تقييم وتجنب المخاطر</p></div>
         </div>
       </div>
-      <div class="phone"><div class="phone-screen"><div class="mini-search">اكتب: كعب العمل</div><div class="mini-card"><div class="mini-title">خطة الجاهزية</div><div class="mini-line teal"></div><div class="mini-line"></div></div><div class="mini-card"><div class="mini-title">المستندات الدقيقة (أصل وصورة)</div><div class="mini-line teal" style="width:80%"></div><div class="mini-line" style="width:60%"></div></div><div class="mini-card"><div class="mini-title">جاهز بنسبة 100٪</div><div style="height:12px;background:#E5DED2;border-radius:99px;margin-top:12px;overflow:hidden"><span style="display:block;width:100%;height:100%;background:#1F9D6A"></span></div></div></div></div>
+      <div class="phone"><div class="phone-screen"><div class="mini-search">اكتب: كعب العمل</div><div class="mini-card"><div class="mini-title">خطة الجاهزية</div><div class="mini-line teal"></div><div class="mini-line"></div></div><div class="mini-card"><div class="mini-title">المستندات الدقيقة (أصل وصورة)</div><div class="mini-line teal" style="width:80%"></div><div class="mini-line" style="width:60%"></div></div><div class="mini-card"><div class="mini-title">مؤشر جاهزية مستهدف 100٪</div><div style="height:12px;background:#E5DED2;border-radius:99px;margin-top:12px;overflow:hidden"><span style="display:block;width:100%;height:100%;background:#1F9D6A"></span></div></div></div></div>
     </div>
   </div>
 </section>
 
-<!-- Slide 5: Product flow -->
+<!-- Slide 6: Product flow -->
 <section class="scene" data-name="Product flow">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>مسار العمل</span></div><div class="meta">04 · Workflow</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>مسار العمل</span></div><div class="meta">06 · Workflow</div></div>
     <div class="slide-title stack"><span class="eyebrow">ديناميكية مخصصة لكل حالة</span><h2>مسار عمل (Workflow) ذكي وليس مجرد محتوى ثابت.</h2></div>
     <div class="grid g4">
-      <div class="card"><h3>أسئلة مشروطة ذكية</h3><p class="lead" style="font-size:18px">الأسئلة تتغير حسب حالتك (المهنة، المحافظة، الغرض) لضمان الدقة الكاملة.</p></div>
-      <div class="card"><h3>مؤشر الجاهزية</h3><p class="lead" style="font-size:18px">درجة دقيقة توضح استعدادك. لا نوصي بالذهاب إلا إذا كانت جاهزيتك 100%.</p></div>
+      <div class="card"><h3>أسئلة مشروطة ذكية</h3><p class="lead" style="font-size:18px">الأسئلة تتغير حسب حالتك (المهنة، المحافظة، الغرض) لتحقيق دقة أعلى في المتطلبات.</p></div>
+      <div class="card"><h3>مؤشر الجاهزية</h3><p class="lead" style="font-size:18px">درجة دقيقة توضح استعدادك. لا نوصي بالذهاب إلا إذا وصل مؤشر الجاهزية للمستوى المستهدف.</p></div>
       <div class="card"><h3>تحديد المتطلبات الخفية</h3><p class="lead" style="font-size:18px">توضيح الحاجة لأصل، صورة، ختم معين، أو شهادة قد لا يتوقعها المستخدم.</p></div>
       <div class="card"><h3>حلقة التعلم المستمر</h3><p class="lead" style="font-size:18px">المنصة تتطور ذاتياً عبر تغذية راجعة فورية لتصحيح التغييرات في المكاتب.</p></div>
     </div>
@@ -118,16 +148,19 @@
         <path d="M230 105 H320" stroke="#0E6F73" stroke-width="8" stroke-linecap="round"/>
         <rect x="330" y="40" width="205" height="130" rx="28" fill="#FFFCF6" stroke="#E5DED2"/><text x="432" y="93" text-anchor="middle" fill="#101828" font-size="24" font-weight="900" font-family="IBM Plex Sans Arabic">تحليل الجاهزية</text><circle cx="391" cy="128" r="10" fill="#F2A33A"/><circle cx="429" cy="128" r="10" fill="#0E6F73"/><circle cx="467" cy="128" r="10" fill="#E5DED2"/>
         <path d="M545 105 H635" stroke="#0E6F73" stroke-width="8" stroke-linecap="round"/>
-        <rect x="645" y="40" width="330" height="130" rx="28" fill="#0E6F73"/><text x="810" y="93" text-anchor="middle" fill="#FFFCF6" font-size="26" font-weight="900" font-family="IBM Plex Sans Arabic">خطة خالية من الأخطاء</text><text x="810" y="132" text-anchor="middle" fill="#FFFCF6" opacity=".74" font-size="18" font-family="IBM Plex Sans Arabic">جاهزية 100% · لا توجد رحلات ضائعة</text>
+        <rect x="645" y="40" width="330" height="130" rx="28" fill="#0E6F73"/>
+        <text x="810" y="85" text-anchor="middle" fill="#FFFCF6" font-size="24" font-weight="900" font-family="IBM Plex Sans Arabic">خطة جاهزية مستهدفة</text>
+        <text x="810" y="118" text-anchor="middle" fill="#FFFCF6" opacity=".8" font-size="14" font-family="IBM Plex Sans Arabic">مؤشر جاهزية مستهدف 100٪</text>
+        <text x="810" y="142" text-anchor="middle" fill="#FFFCF6" opacity=".8" font-size="14" font-family="IBM Plex Sans Arabic">الحد من الزيارات غير الناجحة</text>
       </svg>
     </div>
   </div>
 </section>
 
-<!-- Slide 6: Why E-Business -->
+<!-- Slide 7: Why E-Business -->
 <section class="scene" data-name="Why E-Business">
   <div class="canvas dark">
-    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>لماذا الأعمال الإلكترونية؟</span></div><div class="meta">05 · Why E-Business?</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>لماذا الأعمال الإلكترونية؟</span></div><div class="meta">07 · Why E-Business?</div></div>
     <div class="slide-title stack"><span class="eyebrow">ضرورة وليست رفاهية</span><h2>لماذا سِكّة كمنصة أعمال إلكترونية (E-Business)؟</h2></div>
     <div class="grid g3">
       <div class="card"><h3>إتاحة رقمية 24/7</h3><p class="lead" style="font-size:18px">المنصة تعمل على مدار الساعة لخدمة المستخدمين قبل مواعيد العمل الرسمية للمصالح.</p></div>
@@ -140,10 +173,10 @@
   </div>
 </section>
 
-<!-- Slide 7: E-Business Application -->
+<!-- Slide 8: E-Business Application -->
 <section class="scene" data-name="E-Business Application">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>نموذج العمل الهجين</span></div><div class="meta">06 · E-Business Model (Hybrid)</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>نموذج العمل الهجين</span></div><div class="meta">08 · E-Business Model (Hybrid)</div></div>
     <div class="slide-title stack"><span class="eyebrow">نموذج الأعمال الإلكتروني (E-Business Model)</span><h2>سِكّة يتبنى نموذجاً هجيناً (Hybrid: B2C + B2B) تتكامل فيه القطاعات لدعم بعضها بقوة.</h2></div>
     <div class="grid g3">
       <div class="card" style="border-top: 4px solid #F2A33A">
@@ -154,7 +187,7 @@
       <div class="card" style="border-top: 4px solid #0E6F73">
         <h3 style="color:#0E6F73">B2B (المحرك الربحي الأساسي)</h3>
         <p class="lead" style="font-size:20px; font-weight:bold">الشركات إلى الشركات</p>
-        <p class="lead" style="font-size:18px"><strong>المحرك الأساسي للإيرادات (Primary Revenue Engine)</strong> عبر بيع اشتراكات SaaS لإدارات الموارد البشرية (HR)، حيث يوفر النظام الكفاءة التشغيلية ويمنع تأخير التعيينات المكلف للشركات.</p>
+        <p class="lead" style="font-size:18px"><strong>المحرك الأساسي للإيرادات (Primary Revenue Engine)</strong> عبر بيع اشتراكات SaaS لإدارات الموارد البشرية (HR)، حيث يوفر النظام الكفاءة التشغيلية ويقلل احتمالية تأخير التعيينات المكلف للشركات.</p>
       </div>
       <div class="card" style="border-top: 4px solid #C84630">
         <h3 style="color:#C84630">B2G (التوسع المستقبلي)</h3>
@@ -165,12 +198,12 @@
   </div>
 </section>
 
-<!-- Slide 8: B2B use case -->
+<!-- Slide 9: B2B use case -->
 <section class="scene" data-name="B2B use case">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>تطبيق الشركات (B2B)</span></div><div class="meta">07 · Primary Engine</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>تطبيق الشركات (B2B)</span></div><div class="meta">09 · Primary Engine</div></div>
     <div class="split">
-      <div class="stack"><span class="eyebrow">تأخير التعيينات يكلف الشركات أموالاً طائلة</span><h2>المحرك الأساسي: بيع الكفاءة التشغيلية لفرق الموارد البشرية.</h2><p class="lead">كل تأخير في إنهاء أوراق التعيين (Onboarding) بسبب زيارة فاشلة، يعني خسارة إنتاجية للشركة. سِكّة يضمن عدم حدوث ذلك.</p></div>
+      <div class="stack"><span class="eyebrow">تأخير التعيينات يكلف الشركات أموالاً طائلة</span><h2>المحرك الأساسي: بيع الكفاءة التشغيلية لفرق الموارد البشرية.</h2><p class="lead">كل تأخير في إنهاء أوراق التعيين (Onboarding) بسبب زيارة فاشلة، يعني خسارة إنتاجية للشركة. سِكّة يساعد على تقليص احتمالية حدوث ذلك.</p></div>
       <div class="chart" style="background:#FFFCF6; border: 2px solid #E5DED2; padding:30px; border-radius:24px;">
         <h3 style="color:#C84630; margin-bottom: 20px;">سيناريو الفشل (بدون سِكّة)</h3>
         <p style="font-size:18px; margin-bottom: 10px;">١. الموظف يذهب لاستخراج كعب عمل أو فيش.</p>
@@ -179,17 +212,17 @@
         
         <h3 style="color:#1F9D6A; margin-bottom: 20px;">الحل مع سِكّة SaaS</h3>
         <p style="font-size:18px; margin-bottom: 10px;">✓ حصول الموظف على قائمة مخصصة بحالته قبل الذهاب.</p>
-        <p style="font-size:18px; margin-bottom: 10px;">✓ مؤشر جاهزية يضمن عدم التحرك إلا بجاهزية ١٠٠٪.</p>
+        <p style="font-size:18px; margin-bottom: 10px;">✓ مؤشر جاهزية يساعد على الوصول لجاهزية مستهدفة قبل التحرك.</p>
         <p style="font-size:18px; font-weight:bold;">✓ تقليل الزيارات المتكررة، وبدء العمل فوراً دون تأخير.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Slide 9: B2C use case -->
+<!-- Slide 10: B2C use case -->
 <section class="scene" data-name="B2C use case">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>تطبيق الأفراد (B2C)</span></div><div class="meta">08 · Secondary Revenue</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>تطبيق الأفراد (B2C)</span></div><div class="meta">10 · Secondary Revenue</div></div>
     <div class="slide-title stack"><span class="eyebrow">جذب الجماهير وتوليد البيانات</span><h2>الأفراد: حل مشكلة يومية تولد قاعدة مستخدمين ضخمة للمنصة.</h2></div>
     <div class="grid g3">
       <div class="card"><h3>إنهاء الإجراء من أول مرة</h3><p class="lead" style="font-size:19px">توفير رصيد الإجازات ومصاريف التنقل للأفراد عبر معرفة المطلوب بالضبط.</p><span class="tag">توفير الوقت</span></div>
@@ -199,10 +232,10 @@
   </div>
 </section>
 
-<!-- Slide 10: Business model -->
+<!-- Slide 11: Business model -->
 <section class="scene" data-name="Business model">
   <div class="canvas dark">
-    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>نموذج العمل</span></div><div class="meta">09 · Business Model</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>نموذج العمل</span></div><div class="meta">11 · Business Model & Revenue Sources</div></div>
     <div class="slide-title stack"><span class="eyebrow">نموذج العمل ومصادر الإيرادات (Business Model & Revenue Sources)</span><h2>نموذج إيرادات يركز على توفير التكاليف للشركات (B2B)، مع قنوات دخل متعددة.</h2></div>
     <div class="grid g4">
       <div class="card" style="border: 2px solid #F2A33A;"><h3>HR Subscriptions</h3><p class="lead" style="font-size:16px">اشتراكات SaaS شهرية/سنوية لفرق الـ HR. (المصدر الأساسي - B2B).</p></div>
@@ -216,10 +249,10 @@
   </div>
 </section>
 
-<!-- Slide 11: Market size -->
+<!-- Slide 12: Market size -->
 <section class="scene" data-name="Market size">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>حجم السوق</span></div><div class="meta">10 · Market Sizing</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>حجم السوق</span></div><div class="meta">12 · Market Sizing</div></div>
     <div class="slide-title stack"><span class="eyebrow">توفير ملايين الجنيهات للشركات</span><h2>سوق ضخم يستمد قيمته من خفض تكاليف العمليات للشركات واستهداف ملايين الأفراد.</h2></div>
     <div class="grid g3">
       <div class="kpi"><div class="big num">800K+</div><div class="label">شركة منشأة رسمياً تمثل السوق الكلي (TAM) للتوظيف</div></div>
@@ -234,10 +267,10 @@
   </div>
 </section>
 
-<!-- Slide 12: SWOT -->
+<!-- Slide 13: SWOT -->
 <section class="scene" data-name="SWOT">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>التحليل الموقفي</span></div><div class="meta">11 · SWOT Analysis</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>التحليل الموقفي</span></div><div class="meta">13 · SWOT Analysis</div></div>
     <div class="slide-title stack"><span class="eyebrow">البيئة الداخلية والخارجية</span><h2>تحليل SWOT التفصيلي لمنصة سِكّة.</h2></div>
     <div class="grid g2">
       <div class="card" style="border-right: 4px solid #1F9D6A">
@@ -278,10 +311,10 @@
   </div>
 </section>
 
-<!-- Slide 13: STP -->
+<!-- Slide 14: STP -->
 <section class="scene" data-name="STP">
   <div class="canvas dark">
-    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>استراتيجية السوق</span></div><div class="meta">12 · STP Analysis</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>استراتيجية السوق</span></div><div class="meta">14 · STP Analysis</div></div>
     <div class="split">
       <div class="stack"><span class="eyebrow">الاستهداف الاستراتيجي</span><h2>تحليل STP: تجزئة السوق، الاستهداف، والتموضع.</h2></div>
       <div class="stack" style="gap:20px">
@@ -295,18 +328,18 @@
         </div>
         <div class="card">
           <h3 style="color:#F2A33A">التموضع (Positioning)</h3>
-          <p style="font-size:17px; margin-top:10px">سِكّة ليس "موقعاً للمعلومات" كبحث جوجل. سِكّة هو <b>نظام قياس جاهزية يمنع الفشل الإداري</b>، ويضمن بشكل استباقي استيفاء الأوراق، مقللاً الهدر المالي للشركات والوقت للأفراد.</p>
+          <p style="font-size:17px; margin-top:10px">سِكّة ليس "موقعاً للمعلومات" كبحث جوجل. سِكّة هو <b>نظام قياس جاهزية يحد من الفشل الإداري</b>، ويساعد بشكل استباقي على استيفاء الأوراق، مقللاً الهدر المالي للشركات والوقت للأفراد.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Slide 14: Marketing Mix -->
-<section class="scene" data-name="Marketing Mix">
+<!-- Slide 15: Final Product / Marketing Mix — 4Ps -->
+<section class="scene" data-name="Final Product / Marketing Mix — 4Ps">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>المزيج التسويقي</span></div><div class="meta">13 · The 4Ps</div></div>
-    <div class="slide-title stack"><span class="eyebrow">استراتيجية المنتج والتسعير والتوزيع والترويج</span><h2>المزيج التسويقي (The 4Ps).</h2></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>المنتج النهائي والمزيج التسويقي</span></div><div class="meta">15 · Final Product / Marketing Mix (4Ps)</div></div>
+    <div class="slide-title stack"><span class="eyebrow">المنتج النهائي والمزيج التسويقي — 4Ps</span><h2>المنتج النهائي والمزيج التسويقي — 4Ps</h2></div>
     <div class="grid g2">
       <div class="card">
         <h3>المنتج (Product)</h3>
@@ -328,26 +361,42 @@
   </div>
 </section>
 
-<!-- Slide 15: Marketing Plan -->
-<section class="scene" data-name="Marketing Plan">
+<!-- Slide 16: Marketing & Advertisement Plan -->
+<section class="scene" data-name="Marketing & Advertisement Plan">
   <div class="canvas dark">
-    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>التسويق والإعلانات</span></div><div class="meta">14 · Marketing & Advertisement Plan</div></div>
-    <div class="slide-title stack"><span class="eyebrow">استحواذ ذكي وبناء الثقة</span><h2>الخطة التسويقية والإعلانية (Marketing & Advertisement Plan).</h2></div>
-    <div class="grid g3">
-      <div class="card"><h3>إعلانات Google و SEO</h3><p class="lead" style="font-size:16px">استهداف نية البحث المباشرة (مثل: "الأوراق المطلوبة لـ...") عبر محركات البحث لضمان التحويل العضوي المستمر بتكلفة شبه معدومة.</p></div>
-      <div class="card"><h3>محتوى الفيديو (TikTok/Reels)</h3><p class="lead" style="font-size:16px">إنتاج فيديوهات قصيرة تعليمية (شورتس): "متنزلش قبل ما تجيب دول" لبناء الوعي والانتشار السريع بين فئات الشباب والخريجين.</p></div>
-      <div class="card"><h3>إعلانات شبكات التواصل</h3><p class="lead" style="font-size:16px">حملات إعلانية مدفوعة (Facebook/LinkedIn Ads) تستهدف مديري الموارد البشرية (B2B) والخريجين الجدد (B2C) بشكل دقيق.</p></div>
-      <div class="card"><h3>شراكات الجامعات وسفراء</h3><p class="lead" style="font-size:16px">تفعيل برنامج "سفراء الجامعات" لدعم الخريجين في استخراج أوراقهم (كالجيش وكعب العمل) لبناء ولاء مبكر للعلامة التجارية بقوة.</p></div>
-      <div class="card"><h3>مبيعات الـ B2B المباشرة</h3><p class="lead" style="font-size:16px">عروض تقديمية لمديري الموارد البشرية، رعاية فعاليات ومؤتمرات الـ HR، وإطلاق حملات عبر البريد الإلكتروني للشركات المستهدفة.</p></div>
-      <div class="card"><h3>برنامج الإحالة (Referrals)</h3><p class="lead" style="font-size:16px">توزيع مكافآت للمستخدمين الأفراد والشركات الذين يدعون زملاءهم لاستخدام التطبيق، مما يسرع معدلات النمو العضوي.</p></div>
+    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>التسويق والإعلانات</span></div><div class="meta">16 · Marketing & Advertisement Plan</div></div>
+    <div class="slide-title stack"><span class="eyebrow">الخطة التسويقية والإعلانية — Marketing & Advertisement Plan</span><h2>الخطة التسويقية والإعلانية</h2></div>
+    <div class="split" style="align-items: stretch; gap: 20px;">
+      <!-- Column 1: Marketing Plan -->
+      <div class="stack" style="background: rgba(255, 252, 246, 0.05); padding: 24px; border-radius: 20px; border: 1px solid rgba(255, 252, 246, 0.1);">
+        <h3 style="color: var(--amber); margin-bottom: 12px; border-bottom: 2px solid rgba(242, 163, 58, 0.3); padding-bottom: 8px;">الخطة التسويقية — Marketing Plan</h3>
+        <ul style="font-size: 17px; line-height: 1.6; padding-right: 20px; display: flex; flex-direction: column; gap: 10px;">
+          <li><b>تحسين محركات البحث SEO:</b> استهداف نية البحث العضوية وجذب الزوار الباحثين عن متطلبات المستندات.</li>
+          <li><b>مبيعات B2B المباشرة:</b> استهداف مباشر لفرق الموارد البشرية (HR) عبر عروض توفير تكاليف تعطل الموظفين.</li>
+          <li><b>برنامج سفراء الجامعات:</b> بناء شراكات مع الطلاب لمساعدتهم في استخراج أوراق التخرج والجيش والعمل مبكراً.</li>
+          <li><b>استراتيجية الإحالة (Referral):</b> حوافز للمستخدمين والشركات لدعوة أقرانهم، مما يعزز النمو العضوي.</li>
+          <li><b>بناء الموثوقية والمحتوى التعليمي:</b> نشر أدلة ومقالات ترفع ثقة المستخدمين بالاعتماد على المنصة.</li>
+        </ul>
+      </div>
+      <!-- Column 2: Advertisement Plan -->
+      <div class="stack" style="background: rgba(255, 252, 246, 0.05); padding: 24px; border-radius: 20px; border: 1px solid rgba(255, 252, 246, 0.1);">
+        <h3 style="color: var(--amber); margin-bottom: 12px; border-bottom: 2px solid rgba(242, 163, 58, 0.3); padding-bottom: 8px;">الخطة الإعلانية — Advertisement Plan</h3>
+        <ul style="font-size: 17px; line-height: 1.6; padding-right: 20px; display: flex; flex-direction: column; gap: 10px;">
+          <li><b>إعلانات بحث جوجل (Google Ads):</b> استهداف فوري للكلمات المفتاحية ذات نية البحث المباشرة للاستخراج.</li>
+          <li><b>حملات فيسبوك وإنستجرام:</b> إعلانات ممولة تستهدف الأفراد والخريجين بفوائد المنصة للأفراد.</li>
+          <li><b>إعلانات لينكد إن (LinkedIn Ads):</b> حملات دقيقة تستهدف مديري الموارد البشرية وصناع القرار بالشركات.</li>
+          <li><b>محتوى مرئي قصير (TikTok/Reels):</b> فيديوهات سريعة وتوعوية تحت شعار "متنزلش قبل ما تشوف سِكّة".</li>
+          <li><b>إعادة الاستهداف (Retargeting):</b> حملات للمستخدمين الذين بدأوا ملء خطة جاهزية ولم يكملوها.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Slide 16: Internet Identity -->
+<!-- Slide 17: Internet Identity -->
 <section class="scene" data-name="Internet Identity">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>الهوية الرقمية</span></div><div class="meta">15 · Internet Identity</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>الهوية الرقمية</span></div><div class="meta">17 · Internet Identity</div></div>
     <div class="split">
       <div class="stack"><span class="eyebrow">حضور رقمي موثوق</span><h2>بناء هوية إلكترونية (Internet Identity) تعكس الثقة والكفاءة.</h2><p class="lead">الثقة هي العملة الأهم في قطاع الخدمات. هويتنا الرقمية مصممة لتبدو احترافية ورسمية، ولكن بلمسة عصرية وشابة تجذب الأجيال الجديدة وتطمئن الشركات الكبرى.</p></div>
       <div class="stack" style="gap:16px">
@@ -361,10 +410,10 @@
   </div>
 </section>
 
-<!-- Slide 17: Competitor Analysis -->
+<!-- Slide 18: Competitor Analysis -->
 <section class="scene" data-name="Competitor Analysis">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>تحليل المنافسين</span></div><div class="meta">16 · Competitor Analysis</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>تحليل المنافسين</span></div><div class="meta">18 · Competitor Analysis</div></div>
     <div class="slide-title stack"><span class="eyebrow">مقارنة شاملة مع البدائل المتاحة</span><h2>كيف تتفوق المنصة على الحلول التقليدية؟ (Competitor Analysis)</h2></div>
     <div class="card" style="padding:0; overflow:hidden; border: 2px solid #E5DED2;">
       <table class="table" style="width:100%; text-align:right; border-collapse: collapse; margin:0;">
@@ -440,10 +489,10 @@
   </div>
 </section>
 
-<!-- Slide 18: Competitive Advantage -->
+<!-- Slide 19: Competitive Advantage -->
 <section class="scene" data-name="Competitive Advantage">
   <div class="canvas dark">
-    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>الميزة التنافسية</span></div><div class="meta">17 · Competitive Advantage</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>الميزة التنافسية</span></div><div class="meta">19 · Competitive Advantage</div></div>
     <div class="split">
       <div class="stack"><span class="eyebrow">الخندق الدفاعي الاستراتيجي</span><h1 style="font-size:54px; line-height: 1.2;">الميزة التنافسية (Competitive Advantage).</h1><p class="lead">بينما يعتمد المنافسون على توفير معلومات ثابتة، يبرز سِكّة كنظام ديناميكي يقلل الهدر المالي الملموس للشركات والأفراد بفضل بيانات حية يصعب على المنافسين استنساخها.</p></div>
       <div class="grid g2">
@@ -456,10 +505,10 @@
   </div>
 </section>
 
-<!-- Slide 19: Roadmap -->
-<section class="scene" data-name="Roadmap">
+<!-- Slide 20: Future Expansion -->
+<section class="scene" data-name="Future Expansion">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>خطة التوسع</span></div><div class="meta">18 · Future Expansion</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>خطة التوسع</span></div><div class="meta">20 · Future Expansion</div></div>
     <div class="slide-title stack"><span class="eyebrow">الرؤية التقنية طويلة المدى</span><h2>خطة التوسع المستقبلية (Future Expansion).</h2></div>
     <div class="timeline" style="grid-template-columns:repeat(3,1fr)">
       <div class="step"><div class="dot">السنة 1</div><h4>السيطرة المحلية</h4><p>إطلاق المنصة بالكامل، التركيز على خدمات الـ HR للشركات الكبرى، وتغطية الإجراءات الأساسية في المدن المركزية للوصول للمستخدمين.</p></div>
@@ -469,46 +518,131 @@
   </div>
 </section>
 
-<!-- Slide 20: Business Plan -->
-<section class="scene" data-name="Business Plan">
+<!-- Slide 21: Brief Business Plan -->
+<section class="scene" data-name="Brief Business Plan">
   <div class="canvas dark">
-    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>خطة العمل الموجزة</span></div><div class="meta">19 · Brief Business Plan</div></div>
+    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>خطة العمل الموجزة</span></div><div class="meta">21 · Brief Business Plan</div></div>
     <div class="split">
-      <div class="stack" style="flex:1;"><span class="eyebrow">الملخص التنفيذي الشامل</span><h2>خطة العمل الموجزة<br>(Brief Business Plan).</h2><p class="lead">منصة سِكّة تعيد تعريف تجربة استخراج الأوراق الرسمية، وتحولها من عبء مجهول إلى خطة عمل تقنية واضحة ومضمونة النتائج.</p></div>
+      <div class="stack" style="flex:1;"><span class="eyebrow">الملخص التنفيذي الشامل</span><h2>خطة العمل الموجزة<br>(Brief Business Plan).</h2><p class="lead">منصة سِكّة تعيد تعريف تجربة استخراج الأوراق الرسمية، وتحولها من عبء مجهول إلى خطة عمل تقنية واضحة ومدروسة النتائج.</p></div>
       <div class="stack" style="flex:1.5; gap:14px; background:rgba(255,255,255,0.05); padding:30px; border-radius:24px;">
         <p style="font-size:18px; margin:0;"><b>المشكلة (The Problem):</b> فشل الزيارات الحكومية يكلف الشركات تأخراً مالياً في التعيينات، ويكلف الأفراد وقتاً ومالاً مهدرين.</p>
-        <p style="font-size:18px; margin:0;"><b>الحل (The Solution):</b> منصة أعمال إلكترونية (E-Business) توفر مؤشر جاهزية ذكي لمنع الأخطاء قبل الذهاب.</p>
+        <p style="font-size:18px; margin:0;"><b>الحل (The Solution):</b> منصة أعمال إلكترونية (E-Business) توفر مؤشر جاهزية ذكي لتقليل الأخطاء قبل الذهاب.</p>
         <p style="font-size:18px; margin:0;"><b>السوق المستهدف (Target Market):</b> إدارات الموارد البشرية كـ (Primary B2B)، والأفراد كـ (Secondary B2C).</p>
         <p style="font-size:18px; margin:0;"><b>نموذج العمل (Business Model):</b> اشتراكات SaaS للمؤسسات، ونموذج (Freemium/Pay-per-plan) للأفراد.</p>
         <p style="font-size:18px; margin:0;"><b>التسويق (Marketing):</b> مبيعات B2B مباشرة، محتوى تعليمي فيروسي، تحسين محركات البحث، وبرامج سفراء الجامعات.</p>
-        <p style="font-size:18px; margin:0;"><b>الميزة التنافسية (Competitive Advantage):</b> بيانات ميدانية حية تقدم عائد استثمار (ROI) ملموس عبر منع الهدر.</p>
+        <p style="font-size:18px; margin:0;"><b>الميزة التنافسية (Competitive Advantage):</b> بيانات ميدانية حية تقدم عائد استثمار (ROI) ملموس عبر الحد من الهدر.</p>
         <p style="font-size:18px; margin:0;"><b>التوسع (Expansion):</b> تفعيل الذكاء الاصطناعي (AI) لفحص الأوراق تلقائياً، والتكامل الشامل مع البنية الحكومية.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Slide 21: Conclusion -->
-<section class="scene" data-name="Conclusion">
+<!-- Slide 22: Sources & Assumptions -->
+<section class="scene" data-name="Sources & Assumptions">
   <div class="canvas">
-    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>الخاتمة</span></div><div class="meta">20 · Conclusion</div></div>
-    <div class="split">
-      <div class="stack"><span class="eyebrow">النتائج المتوقعة والملخص النهائي</span><h1 style="font-size:52px; line-height: 1.2;">سِكّة: من فكرة أكاديمية إلى حل جذري لهدر الموارد.</h1><p class="lead">بناء نظام أعمال إلكتروني يجمع بين الاستدامة الربحية العالية (B2B) والقيمة المجتمعية الحقيقية والفعلية (B2C).</p></div>
-      <div class="grid g2" style="gap:16px;">
-        <div class="card" style="padding:20px; border-top: 4px solid #1F9D6A;"><h3>المشكلة والقيمة (Problem & Value)</h3><p class="lead" style="font-size:16px">القضاء المنهجي على ظاهرة فشل الزيارات الحكومية عبر توفير نظام جاهزية استباقي وفعّال تقنياً.</p></div>
-        <div class="card" style="padding:20px; border-top: 4px solid #F2A33A;"><h3>الفئة المستهدفة (Target Audience)</h3><p class="lead" style="font-size:16px">إدارات الموارد البشرية (الشركات) كأولوية لتقليل هدر وقت التعيين، بالإضافة إلى الأفراد والمواطنين كقاعدة بيانات.</p></div>
-        <div class="card" style="padding:20px; border-top: 4px solid #0E6F73;"><h3>المنفعة الاقتصادية (Economic Benefit)</h3><p class="lead" style="font-size:16px">توفير مئات الآلاف من الجنيهات التي تُهدر كأيام عمل بلا إنتاجية حقيقية للشركات بسبب الروتين وتأخر استكمال الأوراق.</p></div>
-        <div class="card" style="padding:20px; border-top: 4px solid #C84630;"><h3>الأثر على الأفراد (Impact on Individuals)</h3><p class="lead" style="font-size:16px">الاستخدام الأمثل لرصيد الإجازات، توفير مصاريف التنقل، تقليل الضغط النفسي، وحماية المواطن من الاستغلال.</p></div>
-        <div class="card" style="padding:20px; grid-column: span 2; text-align:center; background:#FFFCF6; border:2px solid #E5DED2;"><h3>الرؤية المستقبلية (Future Vision)</h3><p class="lead" style="font-size:18px; font-weight:bold;">أن تصبح منصة "سِكّة" البنية التحتية الأساسية لمعرفة وتسهيل الإجراءات في مصر، وتتكامل تقنياً مع التحول الرقمي الحكومي عبر أدوات الذكاء الاصطناعي لتخدم المواطن والاقتصاد معاً.</p></div>
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>المصادر والافتراضات</span></div><div class="meta">22 · Sources & Assumptions</div></div>
+    <div class="slide-title stack">
+      <span class="eyebrow">المصادر والافتراضات الدراسية — Sources & Assumptions</span>
+      <h2>الشفافية والمنهجية الأكاديمية لبناء التقديرات وحجم السوق.</h2>
+    </div>
+    <div class="split" style="align-items: stretch; gap: 24px;">
+      <div class="stack" style="background: var(--ivory); padding: 30px; border-radius: 24px; border: 1.5px dashed var(--border); justify-content: center; flex: 1;">
+        <h3 style="color: var(--teal); margin-bottom: 12px; font-size: 24px;">حماية التقديرات أكاديمياً</h3>
+        <p class="lead" style="font-size: 18px; line-height: 1.6; font-weight: 600;">
+          "الأرقام المستخدمة في تحليل حجم السوق هي تقديرات أكاديمية مبنية على تحليل منطقي لحجم المشكلة، وليست أرقاماً حكومية قطعية. تم استخدامها لدعم تصور حجم الفرصة التجارية وقابلية المشروع للنمو."
+        </p>
+      </div>
+      <div class="grid g1" style="gap: 12px; flex: 1.2;">
+        <div class="card ok" style="padding: 16px; border-right: 4px solid var(--teal);">
+          <h4 style="font-size:18px; margin:0 0 4px; color: var(--navy)">انتشار الإنترنت والتبني الرقمي</h4>
+          <p style="font-size:14px; color: var(--muted); margin:0">بناءً على التقرير السنوي لوزارة الاتصالات لنسبة التغطية واستخدام الهواتف بمصر.</p>
+        </div>
+        <div class="card ok" style="padding: 16px; border-right: 4px solid var(--amber);">
+          <h4 style="font-size:18px; margin:0 0 4px; color: var(--navy)">حجم سوق الشركات والموارد البشرية</h4>
+          <p style="font-size:14px; color: var(--muted); margin:0">تقدير أعداد الشركات المسجلة ونشاط التوظيف السنوي في القطاع الخاص الرسمي.</p>
+        </div>
+        <div class="card ok" style="padding: 16px; border-right: 4px solid var(--red);">
+          <h4 style="font-size:18px; margin:0 0 4px; color: var(--navy)">حجم معاملات الأفراد B2C سنوياً</h4>
+          <p style="font-size:14px; color: var(--muted); margin:0">افتراض معدل طلب الأوراق الرسمية (كعب العمل، الفيش، الجيش) للخريجين الجدد سنوياً.</p>
+        </div>
+        <div class="card ok" style="padding: 16px; border-right: 4px solid var(--green);">
+          <h4 style="font-size:18px; margin:0 0 4px; color: var(--navy)">التسعير والقيمة الموفرة وقابلية التوسع</h4>
+          <p style="font-size:14px; color: var(--muted); margin:0">التسعير مرتبط بالعائد المالي المباشر للشركات من الحد من هدر أيام العمل للموظفين الجدد.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Slide 22: Image Slide -->
-<section class="scene" data-name="Team">
-  <div class="canvas dark" style="display:flex; align-items:center; justify-content:center; padding: 40px;">
-    <img src="./image.png" alt="Sikka Team / Project" style="max-width:100%; max-height:100%; object-fit:contain; border-radius:32px; border: 4px solid #E5DED2; box-shadow: 0 20px 40px rgba(0,0,0,0.3);" />
+<!-- Slide 23: Final Conclusion -->
+<section class="scene" data-name="Final Conclusion">
+  <div class="canvas">
+    <div class="brandbar"><div class="brand"><span class="logo">س</span><span>الخلاصة النهائية</span></div><div class="meta">23 · Final Conclusion</div></div>
+    <div class="split">
+      <div class="stack" style="gap: 20px;">
+        <span class="eyebrow">الخاتمة الاستراتيجية — Final Conclusion</span>
+        <h2>الخلاصة النهائية — Why Sikka Can Work</h2>
+        <p class="lead" style="font-size: 21px; line-height: 1.5;">سِكّة يجمع بين الجدوى التجارية العالية والتأثير المجتمعي الإيجابي، كحل رقمي رائد في سوق واعدة.</p>
+        <div class="card" style="padding: 24px; background: var(--ivory); border: 2px solid var(--teal); border-radius: 20px;">
+          <p class="lead" style="font-size: 19px; font-weight: bold; color: var(--teal); line-height: 1.5; text-align: center; margin: 0;">
+            "القيمة الأساسية لسِكّة هي تحويل الإجراءات الحكومية من تجربة غير مؤكدة إلى مسار واضح قابل للقياس والتحسين."
+          </p>
+        </div>
+      </div>
+      <div class="grid g2" style="gap: 16px;">
+        <div class="card" style="padding: 20px; border-top: 4px solid var(--red);">
+          <h3 style="font-size: 20px; margin-bottom: 6px; color: var(--red);">المشكلة متكررة وتؤرق الجميع</h3>
+          <p class="lead" style="font-size: 15px; color: var(--ink);">تأخر الإجراءات وهدر الزيارات يمثل مشكلة يومية متكررة ومؤلمة للأفراد والشركات في مصر.</p>
+        </div>
+        <div class="card" style="padding: 20px; border-top: 4px solid var(--teal);">
+          <h3 style="font-size: 20px; margin-bottom: 6px; color: var(--teal);">الحل رقمي ومخصص وقابل للتوسع</h3>
+          <p class="lead" style="font-size: 15px; color: var(--ink);">تقنية الجاهزية الذكية مرنة ومخصصة تماماً لكل مستخدم وتتوسع رقمياً بكفاءة عالية وبدون قيود جغرافية.</p>
+        </div>
+        <div class="card" style="padding: 20px; border-top: 4px solid var(--green);">
+          <h3 style="font-size: 20px; margin-bottom: 6px; color: var(--green);">نموذج B2B ذو عوائد قوية</h3>
+          <p class="lead" style="font-size: 15px; color: var(--ink);">بيع الاشتراكات للشركات (SaaS) كأولوية يهدف لتحقيق إيرادات دورية مستدامة من خلال توفير تكاليف التوظيف مباشرة.</p>
+        </div>
+        <div class="card" style="padding: 20px; border-top: 4px solid var(--amber);">
+          <h3 style="font-size: 20px; margin-bottom: 6px; color: var(--amber);">نموذج B2C يبني خندق البيانات</h3>
+          <p class="lead" style="font-size: 15px; color: var(--ink);">التبني الواسع من الأفراد يوفر تغذية راجعة مستمرة تعزز دقة المنصة وتحافظ على تفوقها التنافسي الميداني.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slide 24: Sikka Team Image -->
+<section class="scene" data-name="Team Image">
+  <div class="canvas dark" style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding: 40px;">
+    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>صورة فريق العمل</span></div><div class="meta">24 · Sikka Team Image</div></div>
+    <img src="./image.png" alt="Sikka Team / Project" style="max-width:100%; max-height:80%; object-fit:contain; border-radius:32px; border: 4px solid rgba(255,255,255,0.15); box-shadow: 0 20px 40px rgba(0,0,0,0.3); margin-top: 40px;" />
+  </div>
+</section>
+
+<!-- Slide 25: Thank You -->
+<section class="scene" data-name="Thank You">
+  <div class="canvas dark">
+    <div class="brandbar"><div class="brand"><span class="logo light">س</span><span>شكراً لكم</span></div><div class="meta">25 · Thank You & Discussion</div></div>
+    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; gap: 28px; max-width: 850px; margin: 0 auto; text-align: center;">
+      <span class="eyebrow" style="background: rgba(242, 163, 58, 0.15); color: var(--amber); border-color: rgba(242, 163, 58, 0.25); align-self: center;">سِكّة — Sikka</span>
+      <h1 style="font-size: 64px; line-height: 1.1; margin: 0;">Thank You — شكراً لكم</h1>
+      <h2 style="font-size: 28px; color: var(--amber); margin: 0;">طريق أوضح، وقت أقل، قرارات أذكى</h2>
+      <p class="lead" style="font-size: 21px; line-height: 1.6; margin: 0;">
+        "سِكّة ليس مجرد موقع معلومات، بل نظام جاهزية رقمي يساعد الأفراد والشركات على تقليل الهدر، تحسين الكفاءة، واتخاذ القرار الصحيح قبل الذهاب."
+      </p>
+      <div style="border-top: 1px solid rgba(255,255,255,0.15); padding-top: 20px; margin-top: 10px;">
+        <h3 style="font-size: 20px; color: var(--ivory); margin-bottom: 12px;">Presented by / مقدم من فريق العمل:</h3>
+        <div class="grid g4" style="gap: 16px;">
+          <div style="font-size: 19px; font-weight: bold; color: var(--ivory);">Shawky Elsayed</div>
+          <div style="font-size: 19px; font-weight: bold; color: var(--ivory);">Noura Ali</div>
+          <div style="font-size: 19px; font-weight: bold; color: var(--ivory);">Yousef Tarek</div>
+          <div style="font-size: 19px; font-weight: bold; color: var(--ivory);">Ahmed Khaled</div>
+        </div>
+      </div>
+      <div style="margin-top: 10px;">
+        <span class="tag" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); padding: 8px 20px; font-size: 16px;">أسئلة ونقاش (Questions & Discussion)</span>
+      </div>
+    </div>
   </div>
 </section>
 
